@@ -1,34 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <title>APIrates by jkelleher17</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <title>APIrates by jkelleher17</title>
   </head>
-
   <body>
-    <header>
-      <div class="inner">
-        <h1>APIrates</h1>
-        <h2></h2>
-        <a href="https://github.com/jkelleher17/apirates" class="button"><small>View project on</small> GitHub</a>
-      </div>
-    </header>
+    <section class="page-header">
+      <h1 class="project-name">APIrates</h1>
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.com/jkelleher17/apirates" class="btn">View on GitHub</a>
+      <a href="https://github.com/jkelleher17/apirates/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/jkelleher17/apirates/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <p><img src="https://raw.githubusercontent.com/jkelleher17/apirates/gh-pages/images/new-york-city.png" width="800" height="300">
+    <section class="main-content">
+      <p><img src="https://raw.githubusercontent.com/jkelleher17/apirates/gh-pages/images/new-york-city.png" width="800" height="300">
 <a href="http://www.tripadvisor.com/Tourism-g60763-New_York_City_New_York-Vacations.html">Source</a> </p>
 
 <h1>
@@ -70,12 +61,11 @@
 
 <p><img src="https://raw.githubusercontent.com/jkelleher17/apirates/master/Reg2.png"></p>
 
-<p>About 83 percent of our points were categorized as tax class 1. This meant our data was largely skewed towards one tax class. If a classifier were to predict that every building sold was of tax class 1, then it would seem as if we succeeded. Knowing that our data is skewed, we know to think twice when judging how good our classifier is based on accuracy alone.</p>
-
-<h3>
-<a id="predictions" class="anchor" href="#predictions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Predictions</h3>
+<p>Afterwards, we attempted to classify the homes sales into Tax Class. Each home falls into one of three Tax Class, but about 83 percent of our points were categorized as tax class 1. This meant our data was largely skewed towards one tax class. If a classifier were to predict that every building sold was of tax class 1, then it would seem as if we succeeded. Knowing that our data is skewed, we know to think twice when judging how good our classifier is based on accuracy alone.</p>
 
 <p>Our classifiers were largely successful in predicting the tax class of a property. After comparing our two classifiers, it seemed that Naive Bayes Classifier performed better than the Support Vector Classifier. How the Naive Bayes Classifier improves upon the Support Vector Classifier is illustrated in the ROC curve below:</p>
+
+<p><img src="https://raw.githubusercontent.com/jkelleher17/apirates/master/roc.png"></p>
 
 <p>Interpreting this graph, we see that the Naive-Bayes Classifier (top) has fewer false positives for the same rate of true positives as the Support Vector Machine. Also, the area under the naive-bayes ROC curve is 0.68, which is greater than the area under the SVM ROC curve (0.55).</p>
 
@@ -83,24 +73,14 @@
 <a id="future-work" class="anchor" href="#future-work" aria-hidden="true"><span class="octicon octicon-link"></span></a>Future Work</h3>
 
 <p>Predicting home sale price is a notoriously difficult thing to do. Last August, The Washington Post published a piece on “How to predict rising home prices, neighborhood change, and gentrification” (Badger). This article notes how much of a “logistical nightmare” it is to try and get the data to perform this analysis (Badger). However, building permit data may be particularly useful. As more and more big datasets become available, we expect more analytical studies to be funded to try and predict gentrification and neighborhood change.</p>
-        </section>
 
-        <aside id="sidebar">
-          <a href="https://github.com/jkelleher17/apirates/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/jkelleher17/apirates/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/jkelleher17/apirates">APIrates</a> is maintained by <a href="https://github.com/jkelleher17">jkelleher17</a>.</span>
 
-          <p class="repo-owner"><a href="https://github.com/jkelleher17/apirates"></a> is maintained by <a href="https://github.com/jkelleher17">jkelleher17</a>.</p>
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
 
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
-    </div>
+    </section>
 
   
   </body>
