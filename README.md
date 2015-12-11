@@ -20,7 +20,7 @@ In the case that Book 1 fails, or something goes wrong with the pickel. There is
 
 ##Data Sources 
 
-American Community Survey
-US Census
-NY Department of Finance
-NYC Open Data
+1. American Community Survey
+2. US Census
+3. NY Department of Finance
+4. NYC Open Data
